@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+html,
+body {
+  font-size: 100%;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+input,
+form,
+textarea {
+  outline: none;
+}
+::after,
+::before,
+:focus,
+:active,
+:hover {
+  outline: none;
+}
+
+/* //////////////////////////////// */
+
+@media (max-width: 1800px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 6%;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: rgb(230, 230, 230);
+  }
+  .header p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .menu button {
+    margin: 0px 5px 0px 0px;
+    padding: 0px 10px;
+    width: auto;
+    color: black;
+    height: auto;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: rgb(230, 230, 230);
+    border-right: 1px black solid;
+  }
+  .menu :nth-child(4) {
+    border: 0px;
+  }
+  .texts {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .texts h1 {
+    font-size: 30px;
+  }
+  .texts h2 {
+    font-size: 25px;
+  }
+  .texts h3 {
+    font-size: 20px;
+  }
+  .texts p {
+    font-size: 20px;
+  }
+  .main img {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+  }
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px 0px 0px;
+    gap: 20px;
+    padding: 0px 20px;
+  }
+  .catalog div {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .noRes,
+  .empty {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    width: 100%;
+  }
+  .catalog div img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .catalog div :nth-child(2) {
+    font-size: 20px;
+    margin: 10px 0px;
+    max-height: 23px;
+    overflow: hidden;
+  }
+  .catalog div :nth-child(3) {
+    font-size: 15px;
+  }
+  .catalog button {
+    background-color: black;
+    font-size: 15px;
+    width: 100px;
+    height: auto;
+    margin: 10px 0px 0px;
+    padding: 5px 10px;
+    color: white;
+  }
+  .heading1 {
+    text-align: center;
+    font-size: 60px;
+    margin: 20px 0px 0px;
+  }
+  .searcher {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: end;
+    margin: 20px 0px 0px;
+    align-items: center;
+  }
+  .searcher input {
+    background-color: rgb(230, 230, 230);
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px 10px 10px 40px;
+  }
+  .searcher :nth-child(1) {
+    width: 25px;
+    height: 25px;
+    margin: 0px -35px 0px 0px;
+    z-index: 1;
+    background-color: rgb(230, 230, 230);
+  }
+  .searcher :nth-child(3) {
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 0px 10px;
+    background-color: #fff;
+  }
+  .numsInBasket {
+    font-size: 12px;
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    align-content: center;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    background-color: orange;
+  }
+  .searcher div img {
+    background-color: #fff;
+  }
+  .footer {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    margin: 30px 0px 0px;
+    align-content: center;
+  }
+  .footer p {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+  }
+}
+@media (max-width: 1050px) {
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px 0px 0px;
+    gap: 20px;
+    padding: 0px 20px;
+  }
+  .searcher input {
+    width: 150px;
+  }
+}
+@media (max-width: 750px) {
+  .header {
+    padding: 0px 20px;
+  }
+  .catalog div {
+    height: 350px;
+  }
+  .catalog div img {
+    height: 250px;
+  }
+  .searcher input {
+    width: 130px;
+  }
+}
+@media (max-width: 600px) {
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 0px 0px;
+    gap: 20px;
+    padding: 0px 20px;
+  }
+  .searcher input {
+    width: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    padding: 0px 20px;
+  }
+  .catalog div {
+    height: 300px;
+  }
+  .catalog div img {
+    height: 200px;
+  }
+  .searcher input {
+    width: 70px;
+  }
+}
+@media (max-width: 450px) {
+  .header {
+    padding: 0px 10px;
+  }
+  .menu button {
+    font-size: 13px;
+    margin: 0;
+  }
+}
